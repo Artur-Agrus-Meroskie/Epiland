@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="uk">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Чат-бот Epiland</title>
+    
+    <!-- Підключення шрифту JetBrains Mono -->
+    <link rel="preconnect" href="googleapis.com">
+    <link rel="preconnect" href="gstatic.com" crossorigin>
+    <link href="googleapis.com" rel="stylesheet">
+
+    <!-- Підключення іконок FontAwesome -->
+    <link rel="stylesheet" href="cloudflare.com">
+
+    <!-- Стилі сторінки -->
+    <style>
+        body {
+            font-family: 'JetBrains Mono', monospace;
+            background-color: #f4f4f9;
+            margin: 0;
+            padding: 20px;
+        }
+    </style>
+</head>
+<body>
+
+    <!-- Інтерфейс чат-бота -->
+    <div style="position: fixed; bottom: 20px; right: 20px; background: #fff; box-shadow: 0 4px 15px rgba(0,0,0,0.15); border-radius: 12px; width: 350px; overflow: hidden; border: 1px solid #e0e0e0;">
+        <!-- Шапка чату з новим шрифтом та іконкою робота -->
+        <div style="background: #007bff; color: #fff; padding: 15px; font-weight: bold; display: flex; align-items: center; gap: 10px;">
+            <i class="fa-solid fa-robot" style="font-size: 20px;"></i> 
+            <span>Помічник Epiland</span>
+        </div>
+        <!-- Поле з повідомленнями -->
+        <div style="height: 300px; padding: 15px; overflow-y: auto; background: #f8f9fa; font-size: 14px;">
+            <div style="background: #e9ecef; padding: 10px; border-radius: 8px; margin-bottom: 10px; max-width: 80%;">
+                Привіт! Я ваш новий чат-бот із шрифтом JetBrains Mono. Чим можу допомогти?
+            </div>
+        </div>
+        <!-- Поле введення та іконка відправки -->
+        <div style="display: flex; border-top: 1px solid #e0e0e0; padding: 10px; background: #fff;">
+            <input type="text" placeholder="Напишіть повідомлення..." style="flex: 1; border: none; outline: none; font-family: inherit;">
+            <button style="background: none; border: none; color: #007bff; cursor: pointer; font-size: 18px;">
+                <i class="fa-solid fa-paper-plane"></i>
+            </button>
+        </div>
+    </div>
+
+</body>
+</html>
